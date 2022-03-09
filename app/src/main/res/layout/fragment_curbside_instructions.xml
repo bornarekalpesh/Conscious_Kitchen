@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_CurbsideInstructionsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+        <ImageView
+            android:id="@+id/imageView_BackCurbsideInstructions"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/left_yellow_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:text="Curbside Instructions"
+            android:textColor="@color/colorSwitch"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView_RewardCurbsideInstructions"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/notification_reward" />
+            <ImageView
+                android:id="@+id/imageView_CartCurbsideInstructions"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification_cart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_CurbsideInstructionsTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/imageView_DeliveryRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/resto_location" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView_DeliveryRoute"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/textView_CurbsideMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Tell us how we can identify you when\nyou arrive so we can meet you at the"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_CurbsideColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/textView_CurbsideMessage"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="Color*"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/editText_CurbsideModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/editText_CurbsideColor"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="Model*"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/editText_CurbsideMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/editText_CurbsideModel"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="Make*"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_CurbsideSaveDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_CurbsideMake"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/textView_CurbsideSaveDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppinslight"
+                        android:text="Save Description"
+                        android:textColor="#802319"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/switch_CurbsideSaveDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true"
+                        android:thumb="@drawable/thumb_selector"
+                        android:track="@drawable/track_selector"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_CurbsideContinue"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/relativeLayout_CurbsideSaveDescription"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:elevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#802319">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Continue"
+                                android:textColor="#FFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

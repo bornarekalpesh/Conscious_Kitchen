@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_up"
+        tools:ignore="UnusedAttribute" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_TestimonialsDataTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView_BackTestimonialsData"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/left_yellow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:text="Customer Testimonials"
+            android:textColor="@color/colorSwitch"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_RewardTestimonialsData"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/notification_reward" />
+
+            <ImageView
+                android:id="@+id/imageView_CartTestimonialsData"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification_cart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_TestimonialsDataTitle"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Testimonial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Testimonial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_Testimonial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/like" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imageView_Testimonial"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Testimonials"
+                                android:textColor="#ee3924"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/textView_TestimonialDataSeeMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginRight="25dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="See More"
+                                android:textColor="#ee3924"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_TestimonialDataSeeMoreArrow"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/arrow_red_bottom"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="#FFF"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Testimonial">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_testmonial_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_TestOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_margin="15dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_User"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/man" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/smiley_one" />
+
+                            <TextView
+                                android:id="@+id/textView_UserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_User"
+                                android:layout_toRightOf="@+id/imageView_User"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Jon Watson"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_UserAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserName"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_User"
+                                android:layout_toRightOf="@+id/imageView_User"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Mainevele, OH"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView_UserDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddress"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_User"
+                                android:layout_toRightOf="@+id/imageView_User"
+                                android:text="February 21, 2018"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddress"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toEndOf="@+id/textView_UserDate"
+                                android:layout_toRightOf="@+id/textView_UserDate"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/facebook_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/insta_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/twitter_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/linkedin_small" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserDate"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Conscious Kitchen is favorite restaurant in\nCincinnati go check it out !"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_TestTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_below="@+id/relativeLayout_TestOne"
+                            android:layout_margin="15dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_UserTwo"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/man2" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/smiley_two" />
+
+                            <TextView
+                                android:id="@+id/textView_UserNameTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserTwo"
+                                android:layout_toRightOf="@+id/imageView_UserTwo"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Elizabeth EN"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_UserAddressTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserNameTwo"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserTwo"
+                                android:layout_toRightOf="@+id/imageView_UserTwo"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Mainevele, OH"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView_UserDateTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddressTwo"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserTwo"
+                                android:layout_toRightOf="@+id/imageView_UserTwo"
+                                android:text="February 21, 2018"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddressTwo"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toEndOf="@+id/textView_UserDateTwo"
+                                android:layout_toRightOf="@+id/textView_UserDateTwo"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/facebook_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/insta_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/twitter_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/linkedin_small" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserDateTwo"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Had dinner with girl friend. Menu is perfect,\nsomething for everyone. Service was awesome and\nJason was very accommodating."
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_TestThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout_TestTwo"
+                            android:layout_margin="15dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imageView_UserThree"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/man3" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/heart" />
+
+                            <TextView
+                                android:id="@+id/textView_UserNameThree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserThree"
+                                android:layout_toRightOf="@+id/imageView_UserThree"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Mindy Fill"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_UserAddressThree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserNameThree"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserThree"
+                                android:layout_toRightOf="@+id/imageView_UserThree"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Mainevele, OH"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView_UserDateThree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddressThree"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/imageView_UserThree"
+                                android:layout_toRightOf="@+id/imageView_UserThree"
+                                android:text="February 21, 2018"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddressThree"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toEndOf="@+id/textView_UserDateThree"
+                                android:layout_toRightOf="@+id/textView_UserDateThree"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/facebook_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/insta_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/twitter_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/linkedin_small" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserDateThree"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="I had lunch with some of my colleagues at Echo on\nDay 1. I had the wedge salad - it was delicious.\nOn Night 2, I enjoyed a drink at the bar."
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView_AddPostTestimonial"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/rv_testmonial_list"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:elevation="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#802319">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:fontFamily="@font/poppinslight"
+                                        android:text="Add Post"
+                                        android:textColor="#FFF"
+                                        android:textSize="23sp"
+                                        android:textStyle="bold" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_below="@+id/relativeLayout_Info"-->
+                    <!--                android:background="#323232">-->
+
+                    <!--                <RelativeLayout-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_centerVertical="true"-->
+                    <!--                    android:layout_marginTop="5dp"-->
+                    <!--                    android:layout_marginBottom="5dp">-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/textView_PostHear"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="15dp"-->
+                    <!--                        android:layout_marginLeft="15dp"-->
+                    <!--                        android:text="Post Here to Earn up to"-->
+                    <!--                        android:textColor="#FFF"-->
+                    <!--                        android:textSize="18sp"-->
+                    <!--                        android:textStyle="bold" />-->
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/textView_Points"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginStart="5dp"-->
+                    <!--                        android:layout_marginLeft="5dp"-->
+                    <!--                        android:layout_toRightOf="@+id/textView_PostHear"-->
+                    <!--                        android:text="125 Points"-->
+                    <!--                        android:textColor="#f3d657"-->
+                    <!--                        android:textSize="18sp"-->
+                    <!--                        android:textStyle="bold" />-->
+                    <!--                </RelativeLayout>-->
+                    <!--            </RelativeLayout>-->
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

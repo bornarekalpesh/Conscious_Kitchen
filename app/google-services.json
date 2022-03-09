@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "730092354186",
+    "project_id": "conscious-kitchen-5aee3",
+    "storage_bucket": "conscious-kitchen-5aee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730092354186:android:67663f1620b9add9188b73",
+        "android_client_info": {
+          "package_name": "com.technothinksup.consciouskitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730092354186-9o63qsfg16bquutnkiom7gfrb9um7lj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSVTtSY_dGW76qtMAg9rA86p3Y3UdJBOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730092354186-9o63qsfg16bquutnkiom7gfrb9um7lj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

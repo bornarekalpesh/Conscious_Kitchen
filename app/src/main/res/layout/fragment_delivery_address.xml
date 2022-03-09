@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_DeliveryAddressTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView_BackDeliveryAddress"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/left_yellow_back"
+            android:contentDescription="@string/check_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:textAlignment="center"
+            android:layout_toEndOf="@id/imageView_BackDeliveryAddress"
+            android:layout_toStartOf="@id/ll_overflow_menu"
+            android:text="@string/new_delivery_address"
+            android:textColor="@color/colorSwitch"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_overflow_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_RewardDeliveryAddress"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/notification_reward"
+                android:contentDescription="@string/check_icon" />
+
+            <ImageView
+                android:id="@+id/imageView_CartDeliveryAddress"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification_cart"
+                android:contentDescription="@string/check_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_DeliveryAddressTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kofigyan.stateprogressbar.StateProgressBar
+                android:id="@+id/confirm_pay_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:spb_currentStateNumber="two"
+                android:layout_marginTop="5dp"
+                app:spb_maxStateNumber="five"
+                app:spb_stateBackgroundColor="@color/colorAccent"
+                app:spb_stateForegroundColor="#802319"
+                app:spb_stateNumberBackgroundColor="@color/colorAccent"
+                app:spb_stateNumberForegroundColor="@color/colorAccent"
+                app:spb_currentStateDescriptionColor="#000"
+                app:spb_stateDescriptionColor="#808080"
+                app:spb_animateToCurrentProgressState="true"
+                app:spb_checkStateCompleted="true"/>
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableEnd="@drawable/location_search"
+                android:layout_below="@+id/confirm_pay_progressbar"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorEditTextUnderLineTwo"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="@string/address"
+                android:paddingStart="10dp"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/et_delivery_zip"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/et_address"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:digits="0123456789 "
+                android:maxLength="7"
+                android:backgroundTint="@color/colorEditTextUnderLineTwo"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="@string/zip"
+                android:paddingStart="10dp"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/et_delivery_customerName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/et_delivery_zip"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:backgroundTint="@color/colorEditTextUnderLineTwo"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="@string/customer_name"
+                android:paddingStart="10dp"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/textView_DeliveryInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_delivery_customerName"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/delivery_instructions" />
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/et_delivery_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView_DeliveryInstructions"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ediitext_bg"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="start"
+                android:hint="@string/leave_a_helpful_note_for_your_driver"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:textSize="12sp"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/textView_SaveAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_delivery_instruction"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/save_address"
+                android:textColor="#802319"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switch_SaveAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_delivery_instruction"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:checked="true"
+                android:thumb="@drawable/thumb_selector"
+                android:track="@drawable/track_selector"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_DeliveryAddressContinue"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="80dp"
+                android:layout_below="@+id/textView_SaveAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#802319">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/_continue"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            android:layout_centerInParent="true"
+                            android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

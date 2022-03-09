@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/iv_cat_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sandwiches" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="110dp"
+            android:text="SANDWICHES"
+            android:textColor="#ee3924"
+            android:textSize="23sp"
+            android:fontFamily="@font/poppinslight" />
+    </RelativeLayout>
+
+</LinearLayout>

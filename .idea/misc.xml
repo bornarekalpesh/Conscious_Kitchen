@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.325" />
+        <entry key="app/src/main/res/layout/activity_calender.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.2761816496756256" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/activity_resturant_location.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_add_money_to_wallet.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_add_pick_up_instruction.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_calender.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_coupons.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_delivery_instruction.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_event.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_how_it_work_coupon.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_how_it_work_refer_friend.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_menu_show.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_pick_up_instruction.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_refer_friend.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_reward_process.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_rewardscan.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_rewardscan_camera.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/layout/fragment_rewardscan_restaurant.xml" value="0.3223958333333333" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.3223958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

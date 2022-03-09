@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_CurbsideGiftCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView_BackCurbsideGiftCard"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/left_yellow_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:text="Confirm and Pay"
+            android:textColor="@color/colorSwitch"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView_RewardCurbsideGiftCard"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/notification_reward" />
+            <ImageView
+                android:id="@+id/imageView_CartCurbsideGiftCard"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification_cart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_CurbsideGiftCardTitle"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView_PaymentOptionBar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/confirm_pay_bar" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_PaymentOptions"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView_PaymentOptionBar"
+                android:background="#fffad8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/textView_pickUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PICK UP"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppinslight"/>
+
+                    <TextView
+                        android:id="@+id/textView_RecentRecent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="DELIVERY"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppinslight"/>
+
+                    <TextView
+                        android:id="@+id/textView_RecentFavorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="CURBSIDE"
+                        android:textColor="#802319"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/poppinslight"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView_PickupLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_PaymentOptions"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pickup location"
+                android:textColor="#802319"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinslight"/>
+
+            <TextView
+                android:id="@+id/textView_PickupLocationAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_PickupLocation"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="923 Bedford Ave ,Brooklyn, NY 11205"
+                android:fontFamily="@font/poppinslight"/>
+
+            <TextView
+                android:id="@+id/textView_PickupTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_PickupLocationAddress"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pickup Time"
+                android:textColor="#802319"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinslight"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_PickTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_PickupTime"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg_red"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="10.45 AM"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/poppinslight"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_bg_plan"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="11.15 AM"
+                    android:fontFamily="@font/poppinslight" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/text_bg_plan"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="11.45 AM"
+                    android:fontFamily="@font/poppinslight"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_CurbsideGiftInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_PickTimes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Curbside Instructions"
+                    android:layout_centerVertical="true"
+                    android:textColor="#802319"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView_CurbsidePaymentOptionGiftEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg_red"
+                    android:fontFamily="@font/poppinslight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Edit"
+                    android:textColor="#FFF"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView_PaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_CurbsideGiftInstruction"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Your Card"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinslight"/>
+
+            <TextView
+                android:id="@+id/textView_CurbsideGiftAddNewCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_CurbsideGiftInstruction"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Add New Card"
+                android:textColor="#802319"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppinslight"/>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/relativeLayout_CurbsideGiftInstruction"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/plus_button"/>
+
+            <ImageView
+                android:id="@+id/imageView_CreditCardConfirmPay"
+                android:layout_below="@+id/textView_CurbsideGiftAddNewCard"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/gift_ico"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"/>
+            <!--    <ImageView-->
+            <!--        android:id="@+id/imageView_GiftCArdConfirmPay"-->
+            <!--        android:layout_below="@+id/textView_AddNewCard"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="150dp"-->
+            <!--        android:src="@drawable/card_gift_bg"-->
+            <!--        android:layout_marginTop="5dp"-->
+            <!--        android:scaleType="fitXY"-->
+            <!--        android:layout_centerHorizontal="true"/>-->
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_CurbsideGiftHoldToPay"
+                android:layout_width="125dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/imageView_CreditCardConfirmPay"
+                android:background="@drawable/layout_bg_red"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hold"
+                        android:textColor="#FFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinslight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To\nConfirm Payment"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppinslight" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_CurbsideGiftHoldToPay"
+                android:layout_marginBottom="60dp"
+                android:background="#fffad8">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_YourOrderSubtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sub-Total"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinslight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="$17.05"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinslight" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_YourOrderTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout_YourOrderSubtotal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tax"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinslight"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="$1.20"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinslight"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_YourOrderTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout_YourOrderTax"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Total"
+                        android:textColor="#802319"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppinslight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="$18.25"
+                        android:textColor="#802319"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppinslight"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

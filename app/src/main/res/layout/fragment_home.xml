@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_up"
+        tools:ignore="UnusedAttribute" />
+
+    <ScrollView
+        android:id="@+id/rl_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp">
+
+                        <ImageView
+                            android:id="@+id/imageView_Badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/check_icon"
+                            android:src="@drawable/badge_with_a_star" />
+
+                        <TextView
+                            android:id="@+id/textView_MyREwardHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toStartOf="@id/textView_RewardOption"
+                            android:layout_toEndOf="@+id/imageView_Badge"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/_0_rewards"
+                            android:textColor="#ee3924"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_RewardOption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="30dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/reward_options"
+                            android:textColor="#ee3924"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_Rewardbutton"
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/arrow_red_bottom"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#FFF"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Rewards">
+
+                        <com.xw.repo.BubbleSeekBar
+                            android:id="@+id/seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="25dp"
+                            android:visibility="visible"
+                            app:bsb_always_show_bubble="true"
+                            app:bsb_auto_adjust_section_mark="true"
+                            app:bsb_max="800"
+                            app:bsb_min="0"
+                            app:bsb_progress="0"
+                            app:bsb_second_track_color="@color/colorApp"
+                            app:bsb_section_count="8"
+                            app:bsb_section_text_color="@color/black"
+                            app:bsb_section_text_position="below_section_mark"
+                            app:bsb_show_section_mark="true"
+                            app:bsb_show_section_text="false"
+                            app:bsb_show_thumb_text="false"
+                            app:bsb_touch_to_seek="false"
+                            app:bsb_track_color="@color/gray"
+                            app:bsb_track_size="8dp" />
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:isb_indicator_color="@color/browser_actions_bg_grey"
+                            app:isb_indicator_text_color="@color/cardBack"
+                            app:isb_indicator_text_size="18sp"
+                            app:isb_max="100"
+                            app:isb_min="-1.0"
+                            app:isb_only_thumb_draggable="false"
+                            app:isb_progress="5"
+                            app:isb_seek_smoothly="true"
+                            app:isb_show_indicator="rounded_rectangle"
+                            app:isb_show_tick_marks_type="oval"
+                            app:isb_show_tick_texts="true"
+                            app:isb_thumb_size="20dp"
+                            app:isb_tick_marks_drawable="@drawable/add_bg_yellow"
+                            app:isb_tick_marks_size="13dp"
+                            app:isb_tick_texts_color="@color/black"
+                            app:isb_tick_texts_size="15sp"
+                            app:isb_ticks_count="5"
+                            app:isb_track_background_color="@color/browser_actions_bg_grey"
+                            app:isb_track_background_size="2dp"
+                            app:isb_track_progress_color="@color/colorRed"
+                            app:isb_track_progress_size="4dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_RewardMilestone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Bar"
+                        android:background="#f1df9f"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_rewardMildStone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_MyReward"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Bar">
+
+                        <ImageView
+                            android:id="@+id/imageView_Rewards"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:contentDescription="@string/check_icon"
+                            android:src="@drawable/ym" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/imageView_Rewards">
+
+                            <TextView
+                                android:id="@+id/textView_MyReward"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_toStartOf="@id/rl_count"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="@string/my_rewards"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_ReadyToUse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_MyReward"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="@string/ready_to_use"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:id="@+id/rl_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="15dp">
+
+                                <TextView
+                                    android:id="@+id/tv_possible_count"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/text_bg"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="@string/_0"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_toEndOf="@+id/tv_possible_count"
+                                    android:background="@drawable/arrow_right"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Testimonial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView_Reward"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Testimonial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView_Testimonial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/check_icon"
+                            android:src="@drawable/like" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/imageView_Testimonial"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/testimonials"
+                            android:textColor="#ee3924"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Testimonial"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_testimonial_uimage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/check_icon"
+                            android:src="@drawable/man" />
+
+                        <TextView
+                            android:id="@+id/tv_testmonial_uname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/name"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_UserAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_testmonial_uname"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/address"
+                            android:textColor="#000"
+                            android:textSize="13sp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/textView_UserDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView_UserAddress"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/date"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_below="@+id/textView_UserAddress"-->
+                        <!--                            android:layout_marginStart="10dp"-->
+                        <!--                            android:layout_toEndOf="@+id/textView_UserDate"-->
+                        <!--                            android:orientation="horizontal">-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginStart="3dp"-->
+                        <!--                                android:contentDescription="@string/check_icon"-->
+                        <!--                                android:src="@drawable/facebook_small" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginStart="3dp"-->
+                        <!--                                android:contentDescription="@string/check_icon"-->
+                        <!--                                android:src="@drawable/insta_small" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginStart="3dp"-->
+                        <!--                                android:contentDescription="@string/check_icon"-->
+                        <!--                                android:src="@drawable/twitter_small" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_marginStart="3dp"-->
+                        <!--                                android:contentDescription="@string/check_icon"-->
+                        <!--                                android:src="@drawable/linkedin_small" />-->
+
+                        <!--                        </LinearLayout>-->
+
+                        <TextView
+                            android:id="@+id/tv_testmonial_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView_UserDate"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/description"
+                            android:textColor="#000"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Tesimmonial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Info"
+                        android:background="#323232"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/textView_PostHear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="Post Here to Earn up to"
+                            android:textColor="#FFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_Points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toStartOf="@id/iv_arrow_icon"
+                            android:layout_toEndOf="@+id/textView_PostHear"
+                            android:fontFamily="@font/poppinslight"
+                            android:textColor="#f3d657"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow_icon"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:contentDescription="@string/check_icon"
+                            android:src="@drawable/next_opp"
+                            android:textColor="#FFF"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_cardViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView_Testimonial"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_Order"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_weight="1.4"
+                    app:cardCornerRadius="10dp"
+                    app:elevation="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/order_icon"
+                        android:contentDescription="@string/check_icon"
+                        android:scaleType="fitCenter" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardView_Testimonial"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="0.6"
+                    app:cardCornerRadius="10dp"
+                    app:elevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_Location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#f3d657"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="@string/restaurant_location"
+                                android:textColor="#ee3924"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/relativeLayout_Location"
+                            android:padding="8dp">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_Call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true">
+
+                                <ImageView
+                                    android:id="@+id/imageView_Call"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="@string/check_icon"
+                                    android:src="@drawable/call" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imageView_Call"
+                                    android:text="@string/call"
+                                    android:textColor="#ee3924"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_toStartOf="@+id/relativeLayout_Map"
+                                android:layout_toEndOf="@+id/relativeLayout_Call">
+
+                                <TextView
+                                    android:id="@+id/tv_branch_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:text="@string/branch_name"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_branch_name"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:text="@string/address"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_AddressTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_address"
+                                    android:layout_marginStart="25dp"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:text="@string/branch_time"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_AddressTime1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_address"
+                                    android:layout_marginStart="71dp"
+
+                                    android:fontFamily="@font/poppinslight"
+                                    android:text="@string/branch_time"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_Map"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true">
+
+                                <ImageView
+                                    android:id="@+id/imageView_Location"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:contentDescription="@string/check_icon"
+                                    android:src="@drawable/location" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imageView_Location"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:text="@string/map"
+                                    android:textColor="#ee3924"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_cardViewOrder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_QR"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="10dp"
+                        app:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ee3924">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:contentDescription="@string/check_icon"
+                                android:src="@drawable/qr_code" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardView_QR"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinslight"
+                        android:text="@string/scan_qr_code"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="80dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_Scan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="10dp"
+                        app:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ee3924">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:contentDescription="@string/check_icon"
+                                android:src="@drawable/scan" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardView_Scan"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinslight"
+                        android:text="@string/scan_barcode"
+                        android:textSize="12dp"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

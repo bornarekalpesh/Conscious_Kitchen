@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_up"
+        tools:ignore="UnusedAttribute" />
+
+    <ScrollView
+        android:id="@+id/rlscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                            <ImageView
+                                android:id="@+id/imageView_Badge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/badge_with_a_star" />
+                            <TextView
+                                android:id="@+id/textView_MyREwardHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toEndOf="@+id/imageView_Badge"
+                                android:layout_toRightOf="@+id/imageView_Badge"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="120 Rewards"
+                                android:textColor="#ee3924"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/textView_RewardOption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginRight="30dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Reward Options"
+                                android:textColor="#ee3924"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/arrow_red_bottom"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:textColor="#FFF"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/relativeLayout_Rewards">
+
+                        <!--    <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/home_bar" />-->
+
+                        <!-- <com.anton46.stepsview.StepsView
+                             android:id="@+id/stepsView"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp" />-->
+
+
+                        <!-- <com.xw.repo.BubbleSeekBar
+                             android:id="@+id/seek_bar"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             app:bsb_bubble_color="@color/colorPrimary"
+                             app:bsb_bubble_text_color="@color/colorPrimaryDark"
+                             app:bsb_max="50.0"
+                             app:bsb_min="-50"
+                             app:bsb_progress="0"
+                             app:bsb_second_track_color="@color/colorAccent"
+                             app:bsb_section_count="5"
+                             app:bsb_section_text_position="bottom_sides"
+                             app:bsb_show_progress_in_float="true"
+                             app:bsb_show_section_mark="true"
+                             app:bsb_show_section_text="true"
+                             app:bsb_show_thumb_text="true"
+                             app:bsb_track_color="@color/colorPrimary"/>-->
+
+                        <com.xw.repo.BubbleSeekBar
+                            android:id="@+id/seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="20dp"
+                            android:progressDrawable="@drawable/custom_progress_bar"
+
+                            android:visibility="visible"
+                            app:bsb_always_show_bubble="true"
+                            app:bsb_auto_adjust_section_mark="true"
+                            app:bsb_max="800"
+                            app:bsb_min="0"
+                            app:bsb_progress="400"
+                            app:bsb_second_track_color="@color/colorRed"
+                            app:bsb_section_count="8"
+                            app:bsb_section_text_position="below_section_mark"
+                            app:bsb_show_section_mark="false"
+                            app:bsb_show_section_text="false"
+                            app:bsb_show_thumb_text="false"
+                            app:bsb_touch_to_seek="false"
+                            app:bsb_track_color="@color/colorRed"
+                            app:bsb_track_size="7dp" />
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/seekbar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:isb_max="800"
+                            app:isb_min="0"
+                            app:isb_progress="200"
+                            android:layout_marginTop="30dp"
+                            app:isb_seek_smoothly="true"
+                            app:isb_ticks_count="5"
+
+                            app:isb_track_rounded_corners="true"
+                            app:isb_show_tick_marks_type="oval"
+                            app:isb_tick_marks_size="13dp"
+                            app:isb_show_tick_texts="true"
+                            app:isb_tick_texts_size="15sp"
+                            android:visibility="gone"
+                            app:isb_tick_texts_color="@color/black"
+                            app:isb_thumb_color="@color/colorRed"
+
+                            app:isb_thumb_size="20dp"
+                            app:isb_show_indicator="circular_bubble"
+                            app:isb_indicator_color="@color/white"
+                            app:isb_indicator_text_color="@color/colorAccent"
+                            app:isb_indicator_text_size="18sp"
+                            app:isb_track_background_color="@color/white"
+                            app:isb_track_background_size="200dp"
+                            app:isb_track_progress_color="@color/colorRed"
+                            app:isb_track_progress_size="1dp"
+                            app:isb_only_thumb_draggable="false"/>
+
+<!--
+                        app:isb_tick_marks_drawable="@drawable/indicator_new"
+-->
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_RewardMilestone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Bar"
+                        android:background="#f1df9f"
+                        android:visibility="gone">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_rewardMildStone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_MyReward"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Bar">
+
+                        <ImageView
+                            android:id="@+id/imageView_Rewards"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ym" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@+id/imageView_Rewards"
+                            android:layout_toRightOf="@+id/imageView_Rewards">
+
+                            <TextView
+                                android:id="@+id/textView_MyReward"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="My Rewards"
+                                android:textColor="#000"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_ReadyToUse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_MyReward"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Ready To Use"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginRight="15dp">
+
+                                <TextView
+                                    android:id="@+id/tv_possible_count"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/text_bg"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="0"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="5dp"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@+id/tv_possible_count"
+                                    android:layout_toRightOf="@+id/tv_possible_count"
+                                    android:background="@drawable/arrow_right"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Testimonial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView_Reward"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Testimonial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_Testimonial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/like" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/imageView_Testimonial"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Testimonials"
+                                android:textColor="#ee3924"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Testimonial">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp">
+
+                            <ImageView
+                                android:id="@+id/iv_testimonial_uimage"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/man" />
+
+                            <TextView
+                                android:id="@+id/tv_testmonial_uname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                                android:layout_toRightOf="@+id/iv_testimonial_uimage"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Jon Watson"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_UserAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_testmonial_uname"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                                android:layout_toRightOf="@+id/iv_testimonial_uimage"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Mainevele, OH"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView_UserDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddress"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/iv_testimonial_uimage"
+                                android:layout_toRightOf="@+id/iv_testimonial_uimage"
+                                android:text="February 21, 2018"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserAddress"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toEndOf="@+id/textView_UserDate"
+                                android:layout_toRightOf="@+id/textView_UserDate"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/facebook_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/insta_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/twitter_small" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:src="@drawable/linkedin_small" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_testmonial_desc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView_UserDate"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Conscious Kitchen is favorite restaurant in Cincinnati. Go check it out!"
+                                android:textColor="#000"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Tesimmonial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_Info"
+                        android:background="#323232">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/textView_PostHear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Post Here to Earn up to"
+                                android:textColor="#FFF"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView_Points"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/textView_PostHear"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="125 Points"
+                                android:textColor="#f3d657"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/next_opp"
+                                android:textColor="#FFF"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Order"
+                android:layout_width="110dp"
+                android:layout_height="105dp"
+                android:layout_below="@+id/cardView_Testimonial"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/order_icon"
+                    android:scaleType="fitXY">
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_centerHorizontal="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginTop="10dp"-->
+                    <!--                        android:layout_marginBottom="10dp">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:id="@+id/imageView_HomeLogo"-->
+                    <!--                            android:layout_width="70dp"-->
+                    <!--                            android:layout_height="55dp"-->
+                    <!--                            android:src="@drawable/logo" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_below="@+id/imageView_HomeLogo"-->
+                    <!--                            android:text="ORDER"-->
+                    <!--                            android:textColor="#000"-->
+                    <!--                            android:textSize="23sp"-->
+                    <!--                            android:textStyle="bold" />-->
+                    <!--                    </RelativeLayout>-->
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Location"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_below="@+id/cardView_Testimonial"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/cardView_Order"
+                android:layout_toRightOf="@+id/cardView_Order"
+                app:cardCornerRadius="10dp"
+                app:elevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#f3d657">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppinslight"
+                                android:text="Restaurant Location"
+                                android:textColor="#ee3924"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/relativeLayout_Location">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_Call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_callHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true">
+
+                                <ImageView
+                                    android:id="@+id/imageView_Call"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/call" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imageView_Call"
+                                    android:text="CALL"
+                                    android:textColor="#ee3924"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_toStartOf="@+id/relativeLayout_Map"
+                            android:layout_toLeftOf="@+id/relativeLayout_Map"
+                            android:layout_toEndOf="@+id/relativeLayout_Call"
+                            android:layout_toRightOf="@+id/relativeLayout_Call">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:id="@+id/tv_branch_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:text="Skyline Plaza"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_branch_name"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:text="108089 Montgomey Rd. 2.06 Miles"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_AddressTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_address"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:gravity="center"
+                                    android:text="10.30AM - 09.00PM"
+                                    android:textColor="#000"
+                                    android:textSize="10sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout_Map"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true">
+
+                                <ImageView
+                                    android:id="@+id/imageView_Location"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/location" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imageView_Location"
+                                    android:text="MAP"
+                                    android:fontFamily="@font/poppinslight"
+                                    android:textColor="#ee3924"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView_Order"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_QR"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="10dp"
+                        app:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ee3924">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/qr_code" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardView_QR"
+                        android:fontFamily="@font/acumin"
+                        android:text="SCAN QR CODE"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView_Scan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        app:cardCornerRadius="10dp"
+                        app:elevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ee3924">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/scan" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardView_Scan"
+                        android:fontFamily="@font/acumin"
+                        android:text="SCAN BARCODE"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

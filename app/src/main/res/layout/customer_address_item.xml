@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppinslight"
+        android:text="@string/address"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_select_address"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ediitext_bg"
+        android:fontFamily="@font/poppinslight"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/select"
+        android:textColor="#802319"
+        android:textSize="16sp" />
+
+</LinearLayout>

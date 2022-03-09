@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.AddCurbsideInstructionFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_up"
+        android:visibility="gone"
+        tools:ignore="UnusedAttribute" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/check_icon"
+            android:src="@drawable/left_yellow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:text="@string/add_curbside_instruction"
+            android:textColor="@color/colorSwitch"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView_RewardRecent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/check_icon"
+                android:src="@drawable/notification_reward" />
+
+            <ImageView
+                android:id="@+id/imageView_CartRecent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/check_icon"
+                android:src="@drawable/notification_cart" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_Title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_Title"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/textView_CurbsideMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="@string/tell_us_how_we_can_identify_you_when_nyou_arrive_so_we_can_meet_you_at_the"
+                    android:textSize="14sp" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/editText_CurbsideColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/textView_CurbsideMessage"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="@string/color"
+                    android:paddingStart="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/editText_CurbsideModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/editText_CurbsideColor"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="@string/model"
+                    android:paddingStart="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/editText_CurbsideMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/editText_CurbsideModel"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppinslight"
+                    android:hint="@string/make"
+                    android:paddingStart="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_CurbsideSaveDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_CurbsideMake"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp">
+
+                    <TextView
+                        android:id="@+id/textView_CurbsideSaveDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/switch_CurbsideSaveDescription"
+                        android:fontFamily="@font/poppinslight"
+                        android:text="@string/save_description"
+                        android:textColor="#802319"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/switch_CurbsideSaveDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true"
+                        android:thumb="@drawable/thumb_selector"
+                        android:track="@drawable/track_selector"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                </RelativeLayout>
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/editText_Curbsidedesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/relativeLayout_CurbsideSaveDescription"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_bg_plan"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="@string/desc"
+                    android:inputType="textImeMultiLine"
+                    android:paddingStart="15dp"
+                    android:textColorHint="#802319"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_CurbsideContinue"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/editText_Curbsidedesc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="60dp"
+                    app:cardCornerRadius="10dp"
+                    app:elevation="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#802319">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="@string/_continue"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

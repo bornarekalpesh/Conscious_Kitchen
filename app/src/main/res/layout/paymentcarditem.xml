@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_card_back_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        tools:ignore="UnusedAttribute" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/et_cardNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relativeLayout_CreditCard"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/poppinslight"
+            android:gravity="center_vertical"
+            android:hint="Card Number"
+            android:textColor="@color/black"
+            android:textColorHint="#802319" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cardNo"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/et_month"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="MM"
+                android:textColor="@color/black"
+                android:textColorHint="#802319" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/et_yy"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="YY"
+                android:textColor="@color/black"
+                android:textColorHint="#802319" />
+
+            <TextView
+                android:id="@+id/et_cvv"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/poppinslight"
+                android:gravity="center_vertical"
+                android:hint="Security Code"
+                android:textColor="@color/black"
+                android:textColorHint="#802319" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout_Code"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/poppinslight"
+            android:gravity="center_vertical"
+            android:hint="Name On Card"
+            android:textColor="@color/black"
+            android:textColorHint="#802319" />
+
+        <ImageView
+            android:id="@+id/iv_delete_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:tint="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

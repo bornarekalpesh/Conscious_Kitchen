@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_RestaurantLocationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/imageView_BackRestaurantLocation"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/left_yellow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppinslight"
+            android:text="Restaurant Location"
+            android:textColor="@color/colorSwitch"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_RewardRestaurantLocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/notification_reward" />
+
+            <ImageView
+                android:id="@+id/imageView_CartRestaurantLocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification_cart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/stateprogressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="#000"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="five"
+        app:spb_stateBackgroundColor="@color/colorAccent"
+        app:spb_stateDescriptionColor="#808080"
+        app:spb_stateForegroundColor="#802319"
+        app:spb_stateNumberBackgroundColor="@color/colorAccent"
+        app:spb_stateNumberForegroundColor="@color/colorAccent" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/map"
+        tools:context=".MapLocationActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_RestaurantLocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/users_map"
+        android:background="@drawable/layout_bg_black">
+
+        <TextView
+            android:id="@+id/tv_branch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Mason - Deerfield Towne Center"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_branch_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_branch_name"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="0.6 Mi"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView_MapOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pin_color" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_RestaurantLocationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_RestaurantLocationName"
+        android:background="@drawable/layout_bg_black">
+
+
+        <TextView
+            android:id="@+id/tv_branch_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="5095 Deerfield Blvd \nManson, OH45040 \n513-770-0160"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView_Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/imageView_MapTwo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/final_aarow" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_RestaurantLocationOpeningTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_RestaurantLocationAddress"
+        android:background="@drawable/layout_bg_black">
+
+
+        <TextView
+            android:id="@+id/textView_RestaurantLocationOpeningTimeHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Hours"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_RestaurantLocationOpeningTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/textView_RestaurantLocationOpeningTimeHours"
+            android:layout_toRightOf="@+id/textView_RestaurantLocationOpeningTimeHours"
+            android:fontFamily="@font/poppinslight"
+            android:text="Mon to Sat \nSun"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="6:00am to 9:00pm\n7:00am to 8:00pm"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_RestaurantLocationAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_RestaurantLocationOpeningTime"
+        android:background="@drawable/layout_bg_black">
+
+
+        <TextView
+            android:id="@+id/textView_RestaurantLocationOpeningAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="Available"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_RestaurantLocationOpeningAvailable"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/button_PickUp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_yellow"
+                android:drawableStart="@drawable/pickup"
+                android:drawableLeft="@drawable/pickup"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinslight"
+                android:padding="5dp"
+                android:text="Pick - up"
+                android:textAllCaps="false"
+                android:textColor="#802319"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_Delivery"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_bg_yellow"
+                android:drawableStart="@drawable/deliverytruck"
+                android:drawableLeft="@drawable/deliverytruck"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinslight"
+                android:padding="5dp"
+                android:text="Delivery"
+                android:textAllCaps="false"
+                android:textColor="#802319"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_CurbSide"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_bg_yellow"
+                android:drawableStart="@drawable/car_btn"
+                android:drawableLeft="@drawable/car_btn"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinslight"
+                android:padding="5dp"
+                android:text="Curb Side"
+                android:textAllCaps="false"
+                android:textColor="@color/line_color_orange"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

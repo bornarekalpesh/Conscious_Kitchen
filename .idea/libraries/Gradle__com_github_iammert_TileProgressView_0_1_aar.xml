@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.iammert:TileProgressView:0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7b107b2155a5046d7622735934f267/jetified-TileProgressView-0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7b107b2155a5046d7622735934f267/jetified-TileProgressView-0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ce7b107b2155a5046d7622735934f267/jetified-TileProgressView-0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.iammert/TileProgressView/0.1/adecea7f212f892a0069c955bc88d6b1ba41c15d/TileProgressView-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">Conscious Kitchen</string>
+
+    <string name="str_open_drawer">Open</string>
+    <string name="str_close_drawer">Close</string>
+
+    <!-- <string name="google_map_api">AIzaSyAbIPohJwMQroLmRaSxoBCsBOSkSIJLyIs</string>-->
+    <string name="google_map_api">AIzaSyDufHkByrDJ1HXw9EwMroZIG_y0SQ1ONmw</string>
+
+    <string name="str_nav_drawer_policy"><u>Privacy Policy</u></string>
+    <string name="str_nav_drawer_terms"><u>Terms &amp; Conditions</u></string>
+    <string name="str_nav_drawer_customer"><u>Customer Care</u></string>
+
+    <string name="str_user_name">Example@mail.com</string>
+    <string name="str_user_password">Password</string>
+    <string name="str_login_user_forgot_password">FORGOT PASSWORD </string>
+    <string name="str_login">LOGIN</string>
+    <string name="str_login_join_now">JOIN NOW</string>
+    <string name="str_login_or">Or</string>
+    <string name="str_login_fb">Connect with Facebook</string>
+    <string name="str_login_google">Connect with Google</string>
+    <string name="str_login_apple">Connect with Apple</string>
+    <string name="str_login_guest">Continue As Guest </string>
+
+    <string name="str_sign_up">Sign Up</string>
+    <string name="str_sign_up_title">Create Account</string>
+    <string name="str_sign_up_first_name">First Name </string>
+    <string name="str_sign_up_last_name">Last Name </string>
+    <string name="str_sign_up_birth_date">Enter Birthday !</string>
+    <string name="str_sign_up_phone">Phone</string>
+    <string name="str_sign_accept">I accept the following</string>
+
+    <string name="str_sign_text_notification">Text Message Notification</string>
+    <string name="str_sign_email_notification">Email Notification</string>
+    <string name="str_sign_push_notification">Push Notification</string>
+    <string name="str_sign_already">Already Have Account?</string>
+    <string name="str_sign_login"><u>Login</u></string>
+
+    <string name="str_forgot_title">Forgot Password</string>
+    <string name="str_forgot_email_phone">Email or Phone Number</string>
+    <string name="str_forgot_send_code">SEND VERIFICATION CODE</string>
+    <string name="str_forgot_resend_code"><u>RE-SEND VERIFICATION CODE</u></string>
+    <string name="str_forgot_know_password">Know Password?</string>
+    <string name="str_forgot_login"><u>Login</u></string>
+    <string name="str_forgot_verification_code">Enter Verification Code</string>
+    <string name="str_forgot_verify">Verify</string>
+    <string name="str_forgot_new_password">New Password</string>
+    <string name="str_forgot_re_enter_password">Re-enter Password</string>
+    <string name="str_forgot_change_password">Change Password</string>
+
+    <string name="str_bottom_home">Home</string>
+    <string name="str_bottom_order">Order</string>
+    <string name="str_bottom_tracker">Tracker</string>
+    <string name="str_bottom_event">Events</string>
+    <string name="str_bottom_more">More</string>
+
+    <string name="str_notification_reward_menu">Reward</string>
+    <string name="str_notification_cart_menu">Cart</string>
+
+    <string name="str_fragment_home">Home</string>
+    <string name="str_fragment_order">Order</string>
+    <string name="str_fragment_tracker">Tracker</string>
+    <string name="str_fragment_event">Event</string>
+
+    <string name="str_reward_message">Scan QR code or Enter phone below at Register to Earn <b>Reward Points</b></string>
+    <string name="str_send_invite_message"><b>Earn 25 Points</b> for each new rewards members you invite who signs up.</string>
+
+    <string name="str_dummy_event_info">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</string>
+
+    <string name="str_order_placed">Your <b>Order</b> is Placed\nSuccessfully</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">393355615583006</string>
+    <string name="fb_login_protocol_scheme">fb393355615583006</string>
+
+    <!--
+    <string name="default_web_client_id">960379873409-u6j03tcafs74hqvmt3bdge0n6o7gbtf4.apps.googleusercontent.com</string>
+-->
+    <string name="view_detail"><u>View Detail</u></string>
+    <string name="profilesetting">Profile Settings</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="pickupinst">Pickup Instructions</string>
+    <string name="enter_referral_code">Enter Referral Code</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="Terms_and_condition">Terms And Condition</string>
+    <string name="Customer_Care">Customer Care</string>
+
+    <!--Error Strings-->
+    <string name="unknown_error_try_again">Unknown error occurred! Please try again.</string>
+    <string name="server_error_msg">A temporary server error has occurred. Please try again.</string>
+    <string name="something_went_wrong_try_again">Something went wrong! Please try again.</string>
+    <string name="connection_time_out">Connection Time out. Please try again!</string>
+    <string name="weak_connection">Weak Internet Connection! Please try again!</string>
+    <string name="profile">Profile</string>
+    <string name="recents_amp_favorites"><![CDATA[Recent & Favorites]]></string>
+    <string name="find_a_location">Find a Location</string>
+    <string name="follow_us">Follow us</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or">Or</string>
+    <string name="join_now">Join Now</string>
+    <string name="menu">Menu</string>
+    <string name="view_to_order_by_phone">View to Order by Phone</string>
+    <string name="recent">Recent</string>
+    <string name="favorites">Favorites</string>
+    <string name="featured">Featured</string>
+    <string name="coupons_and_offers">Coupons And Offers</string>
+    <string name="reward">Reward</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="scan_receipt">Scan Receipt</string>
+    <string name="refer_friends_get_points">Refer Friends Get Points</string>
+    <string name="social_media_get_points">Social Media Get Points</string>
+    <string name="how_it_works">How It Works</string>
+    <string name="testimonials">Testimonials</string>
+    <string name="curbside_instructions">Curbside Instructions</string>
+    <string name="default_settings">Default Settings</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="taste">Taste</string>
+    <string name="device">Device</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="wallet">Wallet</string>
+    <string name="gift_cards">Gift Cards</string>
+    <string name="credit_cards">Credit cards</string>
+    <string name="notifications">Notifications</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="social_preference">Social Preference</string>
+    <string name="pay_with_conscious_kitchen_wallet">Pay with Conscious Kitchen wallet</string>
+    <string name="order_favorites">Order Favorites</string>
+    <string name="coupons_and_rewards">Coupons And Rewards</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update">Update</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="branch_time">Branch Time</string>
+    <string name="address">Address</string>
+    <string name="hours">Hours</string>
+    <string name="mon_to_sat">Mon to Sat</string>
+    <string name="sun">Sun</string>
+    <string name="available">Available</string>
+    <string name="pick_up">Pick-up</string>
+    <string name="delivery">Delivery</string>
+    <string name="curb_side">Curb Side</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="your_location">Your Location</string>
+    <string name="use_location">Use Location</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="select">Select</string>
+    <string name="enter_new_address">Enter New Address</string>
+    <string name="new_delivery_address">New Delivery Address</string>
+    <string name="zip">Zip</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="delivery_instructions">Delivery Instructions</string>
+    <string name="leave_a_helpful_note_for_your_driver">Leave a helpful note for your driver.</string>
+    <string name="save_address">Save Address</string>
+    <string name="_continue">Continue</string>
+    <string name="_0_rewards">0 Rewards</string>
+    <string name="reward_options">Reward Options</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="ready_to_use">Ready To Use</string>
+    <string name="_0">0</string>
+    <string name="name">name</string>
+    <string name="date">date</string>
+    <string name="description">description</string>
+    <string name="post_here_to_earn_up_to">Post Here to Earn up to</string>
+    <string name="_0_points">0 Points</string>
+    <string name="restaurant_location">Restaurant Location</string>
+    <string name="call">CALL</string>
+    <string name="map">MAP</string>
+    <string name="scan_barcode">SCAN BARCODE</string>
+    <string name="tracker">Tracker</string>
+    <string name="location">Location</string>
+    <string name="edit">Edit</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="_0_">0$</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="total">Total</string>
+    <string name="coupons">Coupons</string>
+    <string name="_0_coupon">0 Coupon</string>
+    <string name="email">Email</string>
+    <string name="mobile_no">Mobile no</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="events">Events</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="popular_events">Popular Events</string>
+    <string name="title">title</string>
+    <string name="add_curbside_instruction">Add Curbside Instruction</string>
+    <string name="tell_us_how_we_can_identify_you_when_nyou_arrive_so_we_can_meet_you_at_the">Tell us how we can identify you when\nyou arrive so we can meet you at the</string>
+    <string name="color">Color*</string>
+    <string name="model">Model*</string>
+    <string name="make">Make*</string>
+    <string name="save_description">Save Description</string>
+    <string name="desc">Desc*</string>
+    <string name="add_curbside_instruction_">+ Add Curbside Instruction</string>
+    <string name="car_make">Car Make:</string>
+    <string name="car_model">Car Model:</string>
+    <string name="car_color">Car Color:</string>
+    <string name="curbside_instruction">Curbside Instruction:</string>
+    <string name="review_order">Review Order</string>
+    <string name="your_order">Your Order</string>
+    <string name="_0_00">$0.00</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="remove">Remove</string>
+
+</resources>

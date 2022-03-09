@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.technothinksup.consciouskitchen"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.0.0'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.warkiz.tickseekbar:tickseekbar:0.1.4'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
+    implementation 'com.anton46:stepsview:0.0.2'
+
+    implementation 'com.xw.repo:bubbleseekbar:3.20'
+
+    implementation 'com.squareup.retrofit:retrofit:1.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+
+    implementation 'com.andreabaccega:android-form-edittext:1.3.5'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+
+    implementation 'com.google.android.gms:play-services-maps:11.8.0'
+
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+
+    implementation 'net.authorize:accept-sdk-android:1.0.2'
+
+    implementation 'com.karumi:dexter:5.0.0'
+
+    implementation 'com.facebook.android:facebook-login:[8.1)'
+
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    implementation 'info.androidhive:barcode-reader:1.1.5'
+
+    implementation 'com.applandeo:material-calendar-view:1.7.0'
+
+    implementation 'com.github.nisrulz:stackedhorizontalprogressbar:1.0.3'
+
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    implementation 'com.willowtreeapps:signinwithapplebutton:0.3'
+
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
+    implementation 'io.card:android-sdk:5.5.0'
+    implementation 'com.github.iammert:TileProgressView:0.1'
+    implementation 'com.google.android.material:material:1.4.0'
+
+
+
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+}
