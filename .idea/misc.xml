@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/conscious_kitchen/app/src/main/res/drawable/button_guest.xml" value="0.3055" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/activity_barcode_scan.xml" value="0.18802083333333333" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/activity_home_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_edit_profile.xml" value="0.18802083333333333" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_home2.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_refer_friend.xml" value="0.18802083333333333" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_testimonial.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/fragment_testimonial_data.xml" value="0.36666666666666664" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/referal_pending_item.xml" value="0.18802083333333333" />
+        <entry key="..\:/conscious_kitchen/app/src/main/res/layout/usage_stateprogressbar.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.325" />
         <entry key="app/src/main/res/layout/activity_calender.xml" value="0.3223958333333333" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.2761816496756256" />

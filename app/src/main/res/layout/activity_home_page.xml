@@ -59,8 +59,7 @@
                             android:layout_marginTop="50dp"
                             android:contentDescription="@string/check_icon"
                             android:src="@drawable/close"
-                            app:tint="#656262"
-                            />
+                            app:tint="#656262" />
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -106,20 +105,20 @@
                                 android:textStyle="bold" />
 
 
-<!--                            <TextView-->
-<!--                                android:id="@+id/textView_location"-->
-<!--                                android:layout_width="wrap_content"-->
-<!--                                android:layout_height="wrap_content"-->
-<!--                                android:layout_below="@+id/textView_UserName"-->
-<!--                                android:layout_centerInParent="true"-->
-<!--                                android:layout_marginTop="5dp"-->
-<!--                                android:drawableLeft="@drawable/location"-->
-<!--                                android:fontFamily="@font/poppinslight"-->
-<!--                                android:paddingRight="10dp"-->
-<!--                                android:text=" Current Loaction"-->
-<!--                                android:textColor="#2E2C2B"-->
-<!--                                android:textSize="12dp"-->
-<!--                                android:textStyle="normal" />-->
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/textView_location"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_below="@+id/textView_UserName"-->
+                            <!--                                android:layout_centerInParent="true"-->
+                            <!--                                android:layout_marginTop="5dp"-->
+                            <!--                                android:drawableLeft="@drawable/location"-->
+                            <!--                                android:fontFamily="@font/poppinslight"-->
+                            <!--                                android:paddingRight="10dp"-->
+                            <!--                                android:text=" Current Loaction"-->
+                            <!--                                android:textColor="#2E2C2B"-->
+                            <!--                                android:textSize="12dp"-->
+                            <!--                                android:textStyle="normal" />-->
 
 
                             <TextView

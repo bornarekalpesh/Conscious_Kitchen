@@ -2,11 +2,15 @@
   <library name="Gradle: info.androidhive:barcode-reader:1.1.5@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd05b95e3fd3c34e3cd182fb423f4573/jetified-barcode-reader-1.1.5/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d8ada66bb897af5e5b57243fc9d92dc/jetified-barcode-reader-1.1.5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd05b95e3fd3c34e3cd182fb423f4573/jetified-barcode-reader-1.1.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd05b95e3fd3c34e3cd182fb423f4573/jetified-barcode-reader-1.1.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fd05b95e3fd3c34e3cd182fb423f4573/jetified-barcode-reader-1.1.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d8ada66bb897af5e5b57243fc9d92dc/jetified-barcode-reader-1.1.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d8ada66bb897af5e5b57243fc9d92dc/jetified-barcode-reader-1.1.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6d8ada66bb897af5e5b57243fc9d92dc/jetified-barcode-reader-1.1.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.androidhive/barcode-reader/1.1.5/7175658297d89303e1aa4722b5e6042120191a1e/barcode-reader-1.1.5-javadoc.jar!/" />

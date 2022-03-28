@@ -315,8 +315,8 @@
 
                         <ImageView
                             android:id="@+id/iv_testimonial_uimage"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
                             android:contentDescription="@string/check_icon"
                             android:src="@drawable/man" />
 

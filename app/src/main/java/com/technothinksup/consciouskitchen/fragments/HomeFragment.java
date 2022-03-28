@@ -301,11 +301,10 @@ public class HomeFragment extends Fragment {
                             Picasso.with(getActivity())
                                     .load(testImagePath)
                                     .into(iv_testimonial_uimage);
-                            tv_testmonial_uname.setText("" + testimonialLists.get(0).getTestimonialCustName());
-                            textView_UserAddress.setText("" + testimonialLists.get(0).getTestimonialCustAddress());
+                            tv_testmonial_uname.setText("Name: " + testimonialLists.get(0).getTestimonialCustName());
+                            textView_UserAddress.setText("Address:" + testimonialLists.get(0).getTestimonialCustAddress());
                            // textView_UserDate.setText("" + testimonialLists.get(0).getTestimonialStatus());
-
-                            tv_testmonial_desc.setText("" + HtmlCompat.fromHtml(testimonialLists.get(0).getTestimonialDetails(), 0));
+                            tv_testmonial_desc.setText("Comment: " + HtmlCompat.fromHtml(testimonialLists.get(0).getTestimonialDetails(), 0));
 
                         } catch (Exception e) {
                             e.printStackTrace();

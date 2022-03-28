@@ -80,6 +80,7 @@ public class ReviewOrderFragment extends Fragment {
 
     private void setData() {
         ApiInterface apiInterface = Api.getClient().create(ApiInterface.class);
+        Log.e("userId",HomePageActivity.userId);
         Call<CartResponse> call = apiInterface.getCartList(HomePageActivity.userId);
         call.enqueue(new Callback<CartResponse>() {
             @Override

@@ -47,11 +47,12 @@
                     android:layout_height="50dp"
                     android:backgroundTint="@color/colorEditTextUnderLine"
                     android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
                     android:fontFamily="@font/poppinslight"
                     android:gravity="center_vertical"
                     android:hint="@string/str_user_name"
                     android:inputType="textEmailAddress"
-                    android:textColor="#FFF"
+                    android:textColor="@color/white"
                     android:textColorHint="#75FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -69,12 +70,13 @@
                     android:layout_below="@+id/et_email"
                     android:backgroundTint="@color/colorEditTextUnderLine"
                     android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="10dp"
                     android:fontFamily="@font/poppinslight"
                     android:gravity="center_vertical"
                     android:hint="@string/str_user_password"
                     android:inputType="textPassword"
                     android:maxLength="10"
-                    android:textColor="#FFF"
+                    android:textColor="@color/white"
 
                     android:textColorHint="#80FFFFFF"
                     android:textSize="16sp"
@@ -89,10 +91,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/et_password"
+                    android:layout_alignParentRight="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppinslight"
                     android:text="@string/str_login_user_forgot_password"
-                    android:textColor="#7EFFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
@@ -128,7 +131,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:text="@string/str_login_or"
-                android:textColor="#FFF" />
+                android:textColor="@color/white" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -137,26 +140,26 @@
 
                 <com.facebook.login.widget.LoginButton
                     android:id="@+id/button_LoginFB"
-                    android:layout_width="195dp"
-                    android:layout_height="44dp"
-                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppinslight"
                     android:textAllCaps="false"
                     android:textColor="#FFF"
+                    android:visibility="gone"
                     tools:ignore="RtlSymmetry" />
 
                 <com.google.android.gms.common.SignInButton
                     android:id="@+id/button_LoginGoogle"
-                    android:layout_width="200dp"
-                    android:layout_height="44dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/button_LoginFB"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/poppinslight"
                     android:gravity="center"
-
+                    android:visibility="gone"
                     android:text="@string/str_login_google"
                     android:textAllCaps="false"
                     tools:ignore="RtlSymmetry" />
@@ -170,6 +173,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/black"
+                    android:visibility="gone"
                     app:sign_in_with_apple_button_textType="signInWithApple" />
 
 
@@ -188,18 +192,22 @@
                     android:visibility="gone"
                     tools:ignore="RtlSymmetry" />
 
-                <androidx.appcompat.widget.AppCompatButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_LoginGuest"
-                    android:layout_width="195dp"
-                    android:layout_height="35dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/sign_in_with_apple_button"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/button_guest"
+                    android:backgroundTint="@color/color_claim_now_red"
                     android:fontFamily="@font/poppinslight"
                     android:text="@string/str_login_guest"
                     android:textAllCaps="false"
-                    android:textColor="#FFF" />
+                    android:textColor="#FFF"
+                    app:cornerRadius="20dp" />
+
+
 
             </RelativeLayout>
         </RelativeLayout>
