@@ -305,6 +305,7 @@
                         android:id="@+id/linearLayout_coupons_offer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:layout_below="@+id/linearLayout_Menu"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="10dp"
@@ -344,6 +345,7 @@
                         android:layout_below="@+id/linearLayout_coupons_offer"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="10dp"
+                        android:visibility="gone"
                         android:fontFamily="@font/poppins_semibold"
                         android:orientation="vertical">
 
@@ -355,6 +357,7 @@
                             <ImageView
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
+                                android:visibility="gone"
                                 android:contentDescription="@string/check_icon"
                                 android:src="@drawable/notification_reward"
                                 app:tint="#757171"
@@ -436,6 +439,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout_Reward"
                         android:layout_marginStart="25dp"
+                        android:visibility="gone"
                         android:layout_marginTop="10dp"
                         android:orientation="vertical">
 
@@ -490,6 +494,7 @@
                     <LinearLayout
                         android:id="@+id/linearLayout_socialmedia_get_point"
                         android:layout_width="match_parent"
+                        android:visibility="gone"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout_ReferFriend"
                         android:layout_marginStart="25dp"
@@ -660,6 +665,7 @@
                         android:id="@+id/linearLayout_default_setting"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:visibility="gone"
                         android:layout_below="@+id/linearLayout_profile_setting"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="10dp"
@@ -822,6 +828,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/linearLayout_payment_method"
                         android:layout_marginStart="25dp"
+                        android:visibility="gone"
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 

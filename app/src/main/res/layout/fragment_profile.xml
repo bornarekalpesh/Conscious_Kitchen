@@ -51,6 +51,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
+                android:visibility="gone"
                 android:contentDescription="@string/check_icon"
                 android:src="@drawable/notification_reward" />
 
@@ -178,11 +179,13 @@
                 android:layout_below="@+id/linearLayout_AboutUs"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
+                    android:visibility="gone"
                     android:src="@drawable/notification_reward"
                     app:tint="@color/colorWhite" />
 
@@ -208,6 +211,7 @@
                 android:layout_below="@+id/linearLayout_ReferFriend"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -237,6 +241,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linearLayout_socialMedia"
                 android:layout_marginStart="25dp"
+                android:visibility="gone"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
@@ -295,6 +300,7 @@
                 android:layout_below="@+id/linearLayout_FindLocation"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <ImageView

@@ -8,8 +8,8 @@
         android:id="@+id/notification_reward_menu"
         android:icon="@drawable/notification_reward"
         android:title="@string/str_notification_reward_menu"
-        android:visible="true"
-        app:showAsAction="always"/>
+        android:visible="false"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/notification_cart_menu"
         android:icon="@drawable/notification_cart"

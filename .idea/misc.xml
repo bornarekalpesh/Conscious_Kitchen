@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/activity_barcode_scan.xml" value="0.22" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/app_bar_main.xml" value="0.11458333333333333" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/fragment_home.xml" value="0.11458333333333333" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/fragment_home2.xml" value="0.3333333333333333" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/layout/fragment_recent_show.xml" value="0.11458333333333333" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/menu/main_menu.xml" value="0.22" />
+        <entry key="..\:/OSP Project/Conscious_Kitchen/app/src/main/res/menu/notification_menu.xml" value="0.11458333333333333" />
         <entry key="..\:/conscious_kitchen/app/src/main/res/drawable/button_guest.xml" value="0.3055" />
         <entry key="..\:/conscious_kitchen/app/src/main/res/layout/activity_barcode_scan.xml" value="0.18802083333333333" />
         <entry key="..\:/conscious_kitchen/app/src/main/res/layout/activity_home_page.xml" value="0.36666666666666664" />

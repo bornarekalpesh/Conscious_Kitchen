@@ -130,6 +130,7 @@
                 android:layout_below="@+id/relativeLayout_LoginValues"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
+                android:visibility="gone"
                 android:text="@string/str_login_or"
                 android:textColor="@color/white" />
 
@@ -204,6 +205,7 @@
                     android:fontFamily="@font/poppinslight"
                     android:text="@string/str_login_guest"
                     android:textAllCaps="false"
+                    android:visibility="gone"
                     android:textColor="#FFF"
                     app:cornerRadius="20dp" />
 

@@ -218,6 +218,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:visibility="gone"
                         android:id="@+id/relativeLayout_MyReward"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -278,10 +279,10 @@
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:background="@drawable/text_bg"
+                                    android:fontFamily="@font/poppinslight"
                                     android:gravity="center"
                                     android:padding="5dp"
                                     android:text="0"
-                                    android:fontFamily="@font/poppinslight"
                                     android:textColor="#FFF"
                                     android:textStyle="bold" />
 
@@ -290,11 +291,11 @@
                                     android:layout_height="20dp"
                                     android:layout_centerVertical="true"
                                     android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/poppinslight"
                                     android:layout_marginLeft="5dp"
                                     android:layout_toEndOf="@+id/tv_possible_count"
                                     android:layout_toRightOf="@+id/tv_possible_count"
                                     android:background="@drawable/arrow_right"
+                                    android:fontFamily="@font/poppinslight"
                                     android:gravity="center"
                                     android:padding="5dp"
                                     android:textColor="#FFF"
@@ -309,6 +310,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:visibility="gone"
                 android:id="@+id/cardView_Testimonial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -763,6 +765,7 @@
 
 
             <LinearLayout
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cardView_Order"
